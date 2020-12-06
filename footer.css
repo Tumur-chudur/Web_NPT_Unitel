@@ -1,0 +1,25 @@
+footer {
+	clear: both;
+	background: #545871;
+    position: relative;
+    width: 100%;
+    min-height: 60px;
+    max-height: 120px;
+}
+
+footer ul {
+	margin-left: 8%;
+    list-style-type: none;
+    line-height: 1!important;
+    font-size: .75rem;
+    padding: 26px;
+    margin-bottom: 0!important;
+}
+
+footer ul li {
+    display: inline-block!important;
+    padding-right: .5rem;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}

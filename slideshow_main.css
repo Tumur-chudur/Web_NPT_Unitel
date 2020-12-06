@@ -1,0 +1,55 @@
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: calc(100% * 8);
+  height: 510px;
+  -webkit-animation: slide 20s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.slide img {
+  width: inherit;
+  height: 100%;
+}
+
+@-webkit-keyframes slide {
+  16.6% {margin-left: 0px;}
+  33.2% {margin-left: -120%;}
+  49.8% {margin-left: -240%;}
+  66.4% {margin-left: -360%;}
+  85% {margin-left: -480%;}
+  100% {margin-left: -600%;}
+}
+
+.turbo-link {
+  margin-left: 8%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  height: 150px;
+}
+.turbo-link .content {
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    height: 150px;
+    padding: 20px 30px;
+    margin-left: 2%;
+}
+
+.turbo-link .content:hover {
+    background-color: #78c71f;
+    border-radius: 8px;
+}

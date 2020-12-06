@@ -1,0 +1,29 @@
+.gallery {
+  margin: 30px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 310px;
+  height: 312px;
+  border-radius:15px; 
+}
+.container{
+  width: 100%
+  height:auto;
+  padding-left:120px;
+  padding-top: 70px;
+
+}
+.gallery:hover {
+  border: 1px solid blue;
+}
+
+.gallery img {
+  width: 100%;
+  height: 169px;
+   border-radius:15px 15px 0px 0px;; 
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}

@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  nav {
+    background:#0072C6;
+    padding: 0 15px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .menu,
+  .logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+    position: relative;
+    display: block;
+  }
+  .logoSVG {
+    height: 24px;
+  }
+  .hamburger {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+    position: relative;
+    display: block;
+  }
+  
+  .searchBar {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+    position: relative;
+    display: block;
+  }
+  input[type=search] {
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 2px 10px 3px 40px;
+    outline: none;
+  }
+  input[type=search]:focus {
+    border: 3px solid grey;
+  }
+  .item {
+    padding: 10px;
+  }
+  .item:not(.button) a:hover,
+  .item a:hover::after {
+    color: #ccc;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu li a {
+    display: block;
+    padding: 0px 5px;
+  }
+  .item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .logo {
+    flex: 1;
+  }
+
+.dropbtn {
+  background-color: #0072C6;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+  
+  @media all and (min-width: 900px) {
+    .menu {
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+  }
