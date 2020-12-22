@@ -1,0 +1,2018 @@
+<div class="off-canvas-wrapper  ng-isolate-scope" style="height: 100%;">
+    
+
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+
+      <div class="off-canvas position-right  ng-isolate-scope">
+        <!-- end menu orj irne -->
+        <ul class="horizontal menu">
+          <li><a class="active">Юнител</a></li>
+          <li><a class="" href="http://www.univision.mn">Юнивишн</a></li>
+          <li><a class="" href="http://www.unitel.mn/business">Байгууллага</a></li>
+          <li><a class="" href="http://www.unitel.mn/unitel/upoint">U-Point</a></li>
+          <li><a class="" href="http://smarturl.it/LookTVmn">LookTV</a></li>
+        </ul>
+        <ul class="mobile-ofc vertical menu offcanvas-menu-dest">
+          <li><a href="product">БҮТЭЭГДЭХҮҮН</a>
+              <ul class="nested vertical menu">
+                <li><a href="product/postpaid">Дараа төлбөрт</a></li>
+                <li><a href="product/hybrid">Хосолсон төлбөрт</a></li>
+                <li><a href="product/prepaid">Урьдчилсан төлбөрт</a></li>
+                <!-- <li><a href="product/family">Хамтдаа хөтөлбөр</a></li> -->
+                <li><a href="product/u">U хөтөлбөр</a></li>
+                <li><a href="product/data">Дата үйлчилгээ</a></li>
+                <li><a href="product/ger">Гэр интернэт</a></li>
+                <li><a href="product/international">Олон улсын үйлчилгээ</a></li>
+                <li><a href="product/ip77">IP77 үйлчилгээ</a></li>
+                <li><a href="product/vaproduct">Нэмэлт үйлчилгээ</a></li>
+              </ul>
+          </li>
+          <li><a href="store">ТӨХӨӨРӨМЖ</a></li>
+          <li><a href="promotion">УРАМШУУЛАЛ</a></li>
+          <li><a href="https://help.unitel.mn" target="_blank">ТУСЛАМЖ</a>
+            <!-- <ul class="nested vertical menu small">
+              <li><a href="https://help.unitel.mn" target="_blank">Юнител хөтөч</a></li>
+              <li><a href="https://www.unitel.mn/unitel/helpdesk/page-settings">Гар утасны тохиргоо</a></li>
+              <li><a href="https://www.unitel.mn/unitel/helpdesk/coverage">Хамрах хүрээ</a></li>
+            </ul> -->
+          </li>
+          <!--      <li><a log-me-out>Гарах</a></li> -->
+        </ul>
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content="">
+       <!--  <div id="snowflakeContainer">
+          <p class="snowflake">❅</p>
+        </div> -->
+        <uheader current-user="currentUser" class="ng-isolate-scope">
+<style>
+  .animated {
+            -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s; 
+            /*animation-timing-function: steps(10);*/
+            -webkit-animation-fill-mode: both; 
+            animation-fill-mode: both; 
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+         }
+         
+         @-webkit-keyframes tada { 
+            0% {-webkit-transform: scale(1.2);}
+            10%, 20% {-webkit-transform: scale(1) rotate(-5deg);} 
+            30%, 50%, 70%, 90% {-webkit-transform: scale(1.6) rotate(5deg);}
+            40%, 60%, 80% {-webkit-transform: scale(1.6) rotate(-5deg);} 
+            100% {-webkit-transform: scale(1.2) rotate(0);} 
+         }
+         
+         @keyframes tada { 
+            0% {transform: scale(1.2);} 
+            10%, 20% {transform: scale(1) rotate(-5deg);} 
+            30%, 50%, 70%, 90% {transform: scale(1.6) rotate(5deg);} 
+            40%, 60%, 80% {transform: scale(1.6) rotate(-5deg);} 
+            100% {transform: scale(1.2) rotate(0);}
+         }
+          
+       /*   @-webkit-keyframes tada {
+              from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+
+              10%,
+              20% {
+                -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+              }
+
+              30%,
+              50%,
+              70%,
+              90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+              }
+
+              40%,
+              60%,
+              80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+              }
+
+              to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+            }
+
+            @keyframes tada {
+              from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+
+              10%,
+              20% {
+                -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+              }
+
+              30%,
+              50%,
+              70%,
+              90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+              }
+
+              40%,
+              60%,
+              80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+              }
+
+              to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+            }*/
+
+         .tada { 
+            -webkit-animation-name: tada; 
+            animation-name: tada; 
+         }
+         /*.clr{fill:#44bd93;}*/
+
+         .clr {animation: col 1s infinite;}
+            @keyframes col {
+            0%,20% {fill:#78C71D}
+            20%,80% {fill:#6bb319;}
+            80%,100% {fill:#78C71D}
+          }
+
+          .star-five {
+            margin: 50px 0;
+            position: relative;
+            display: block;
+            color: red;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid red;
+            border-left: 100px solid transparent;
+            transform: rotate(35deg);
+          }
+          .star-five:before {
+            border-bottom: 80px solid red;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -45px;
+            left: -65px;
+            display: block;
+            content: '';
+            transform: rotate(-35deg);
+          }
+          .star-five:after {
+            position: absolute;
+            display: block;
+            color: red;
+            top: 3px;
+            left: -105px;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid red;
+            border-left: 100px solid transparent;
+            transform: rotate(-70deg);
+            content: '';
+          }      
+</style>
+<header id="header" sticky-header="fix-header" class="fix-header">
+  <div style="width:100%">
+    <nav class="web-nav show-for-medium ">
+      <div class="row">
+        <div class="icon-container">
+          <ul>
+            <li class="icon active"><a>Юнител</a></li>
+            <li class="icon"><a href="http://www.univision.mn">Юнивишн</a></li>
+            <li class="icon"><a href="http://www.unitel.mn/business">Байгууллага</a></li>
+            <li class="icon"><a href="http://www.unitel.mn/unitel/upoint">U-Point</a></li>
+            <li class="icon"><a class="" href="http://smarturl.it/LookTVmn">LookTV</a></li>
+          </ul>
+        </div>
+       <!--  <div class="lang-container">
+          <ul>
+            <li class="lan active"><a >MN</a></li>
+            <li class="lan "><a >EN</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </nav>
+    <div class="top-bar">
+      <div class="row">
+        <div class="top-bar-title">
+          <strong>
+            <a href="home" name="home" class="hide-for-small"><img src="https://www.unitel.mn/img/logo.svg" alt="Unitel" class="main-logo"></a>
+            <a href="home" name="home" class="hide-for-medium"><img src="https://www.unitel.mn/img/logo1.svg" alt="Unitel" class="main-logo"></a>
+          </strong>
+          <ul class="dropdown menu hide-for-large ng-isolate-scope" data-hide-for="large" style="margin-bottom:5px; margin-top:3px;" data-dropdown-menu="">
+            <li class="btn search is-submenu-item">
+              <!-- <a href="search" name="search"><i class="search"></i></a> -->
+            </li>
+            <li class="btn is-submenu-item">
+              <a class="button nuat" href="vaproduct/vatlog">НӨАТ</a>
+            </li>
+            <!-- ngIf: $ctrl.currentUser.is_logged_in -->
+            <!-- <li class="btn search"> -->
+             <!--  <li><a href="https://www.unitel.mn/uu"><img src="../../style/icon/uu.svg" alt="Ухаанаараа уралдъя" class="custom-svg"></a></li> -->
+           <!--  <li class="btn">
+                <a href="promotion/343"><img src="/unitel/assets/hot.52e692ec229df130aa5af1c4fc62f939.png" style=" height: 13px; width: 57px;"></a>
+              </li> -->
+              <!-- <a href="search" name="search"><i class="search"></i></a> -->
+            <!-- <li class="btn search">
+              <a href="https://www.unitel.mn/unitel/lunar2020"><img src="https://www.unitel.mn/img/4huchten/malgai.png" style=" height: 35px;margin-top: -5px; margin-bottom: -8px;"></a>
+            </li> -->
+            
+            <li class="btn is-submenu-item" ng-hide="$ctrl.currentUser.is_logged_in">
+              
+              <a log-me-in="" class="ng-isolate-scope"> <i class="login"></i> </a>
+            </li>
+            <li class="btn logged is-dropdown-submenu-parent no-animate switch-account is-submenu-item ng-hide" ng-show="$ctrl.currentUser.is_logged_in" ng-class="{'is-open' : $ctrl.isopen}" ng-click="$ctrl.openmenu()">
+              <a ng-href="service/usage" style="margin-right: 15px; margin-left:10px;" href="service/usage"> <i class="logged"></i>
+                <!-- <span>{{$ctrl.currentUser.username}}</span> -->
+              </a>
+                <div class="menu submenu right mobile-dropdown-info">
+                  <div class="accounts-container">
+                    <div class="current">
+                      <a href="service/usage">
+                      <div class="account">
+                        <i class="sso uniA"></i>
+                        <div>
+                          <number class="ng-binding"></number>
+                          <!-- <package> Багц 10'000</package> -->
+                        </div>
+                      </div>
+                    </a></div>
+                   <!-- ngRepeat: item in $ctrl.uinfo.private.list -->
+                    <!-- <div ng-repeat="i in [1,2,3,4,5]"><a href="service/usage?t=settings">
+                      <div class="account">
+                        <i class="sso ger"></i> 
+                        <div>
+                          <number>Үйлчилгээний тохиргоо</number>
+                        </div>
+                      </div>
+                    </a></div> -->
+                  </div>
+                  <div class="loggout">
+                    <div>
+                      <a ng-click="$ctrl.logout()">
+                      <div class="account">
+                        <i class="sso signout"></i> 
+                        <div>
+                          <number>Гарах</number>
+                        </div>
+                      </div>
+                    </a></div>
+                  </div>
+
+                 <!--  <li class="profile" ng-repeat="item in $ctrl.uinfo.private.list">
+                      <div class="photo"><img ng-class="{'grayscale' : item.disable == 'yes'}" ng-src="https://www.unitel.mn/img/profile/{{item.site + '.png'}}" /></div>
+                      <div class="content">
+                          <div class="text">
+                              <h3 ng-class="{'textgray' : item.disable == 'yes'}">{{item.id}}</h3>
+                              <h6>{{item.ptype}}</h6>
+                          </div>
+                          <img class="btn "  ng-if="item.disable == 'no'" ng-click="$ctrl.switch(item)" src="https://www.unitel.mn/img/profile/arrow.svg" />
+                      </div>
+                  </li> -->
+                    
+                <!-- </ul> -->
+                </div>
+            </li>
+            <li class="btn is-submenu-item">
+              <a class="menu-icon dark right-off-canvas-toggle" type="button"></a>
+            </li>
+          </ul>
+        </div>
+        <div id="responsive-menu">
+          <div class="top-bar-right show-for-large">
+            <ul class="dropdown menu copy-menu-to-offcanvas ng-isolate-scope" data-dropdown-menu="">
+              <li class="cool-link is-submenu-item is-dropdown-submenu-parent opens-right">
+                <a href="#">Бүтээгдэхүүн</a>
+                <ul class="menu submenu is-dropdown-submenu vertical">
+                  <li class="is-submenu-item"><a href="product/postpaid">Дараа төлбөрт үйлчилгээ</a></li>
+                  <li class="is-submenu-item"><a href="product/hybrid">Хосолсон төлбөрт үйлчилгээ</a></li>
+                  <li class="is-submenu-item"><a href="product/prepaid">Урьдчилсан төлбөрт үйлчилгээ</a></li>
+                  <!-- <li><a href="product/family">Хамтдаа хөтөлбөр</a></li> -->
+                  <li class="is-submenu-item"><a href="product/u">U хөтөлбөр</a></li>
+                  <li class="is-submenu-item"><a href="product/data">Дата үйлчилгээ</a></li>
+                  <li class="is-submenu-item"><a href="product/ger">Гэр интернэт үйлчилгээ</a></li>
+                  <li class="is-submenu-item"><a href="product/international">Олон улсын үйлчилгээ</a></li>
+                  <li class="is-submenu-item"><a href="product/ip77">IP77 үйлчилгээ</a></li>
+                  <li class="is-submenu-item"><a href="vaproduct">Нэмэлт үйлчилгээ</a></li>
+                </ul>
+              </li>
+              <li class="cool-link is-submenu-item"><a href="store">Төхөөрөмж</a></li>
+              <li class="cool-link promotion is-submenu-item"><a href="promotion">Урамшуулал<!-- <unews-new-bubble></unews-new-bubble> -->
+                <!-- ngIf: $ctrl.newscount !=='llll' --><span class="warning badge  ng-binding ng-scope" ng-if="$ctrl.newscount !=='llll'">20</span><!-- end ngIf: $ctrl.newscount !=='llll' -->
+                
+              </a></li>
+              <li class="cool-link is-submenu-item">
+                <a href="https://help.unitel.mn" target="_blank">Тусламж</a>
+                <!-- <ul class="menu submenu" style="width:200px;">
+                  <li><a href="https://help.unitel.mn" target="_blank">Юнител хөтөч</a></li>
+                  <li><a href="https://www.unitel.mn/unitel/helpdesk/page-settings">Гар утасны тохиргоо</a></li>
+                  <li><a href="https://www.unitel.mn/unitel/helpdesk/coverage">Хамрах хүрээ</a></li>
+                </ul> -->
+              </li>
+              <!-- <li class="btn search"><a href="search" name="search"><i class="search"></i></a></li> -->
+              <li class="btn  is-submenu-item">
+                <a class="button nuat" href="vaproduct/vatlog">НӨАТ</a>
+              </li>
+              <!-- ngIf: $ctrl.currentUser.is_logged_in -->
+              
+         <!--      <li class="btn search"><a href="search" name="search">
+                <i class="search"></i>
+              </a></li>
+              <li class="btn">
+                <a href="promotion/343"><img src="/unitel/assets/hot.52e692ec229df130aa5af1c4fc62f939.png" style="width: 120px; margin-top: -10px; margin-bottom: -10px;"></a>
+              </li> -->
+              <li class="btn logged is-dropdown-submenu-parent no-animate switch-account is-submenu-item ng-hide" ng-show="$ctrl.currentUser.is_logged_in">
+                <a ng-href="service/usage" class="head" href="service/usage">
+                  <i class="logged"></i>
+                 <!-- {{$ctrl.currentUser.username}} -->
+                </a>
+                <div class="menu submenu vertical right accordion-menu mobile-dropdown-info">
+                  <div class="accounts-container">
+                    <div class="current">
+                        <a href="service/usage">
+                        <div class="account">
+                          <i class="sso uniA"></i>
+                          <div>
+                            <number class="ng-binding"></number>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- ngRepeat: item in $ctrl.uinfo.private.list -->
+                  </div>
+                  <div class="loggout">
+                    <div>
+                      <a ng-click="$ctrl.logout()">
+                      <div class="account">
+                        <i class="sso signout"></i> 
+                        <div>
+                          <number>Гарах</number>
+                        </div>
+                      </div>
+                    </a></div>
+                  </div>
+
+                    
+                <!-- </ul> -->
+                </div>
+              </li>
+              <li class="btn no-animate is-submenu-item" ng-hide="$ctrl.currentUser.is_logged_in">
+                <a ng-click="$ctrl.openModLogin()">
+                  <i class="login"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-field">
+          <div class="row collapse">
+            <div class="large-9 small-9 columns">
+              <input type="text" placeholder="Хайх">
+            </div>
+            <div class="large-3 small-3 columns">
+              <a href="#" class="button expand">dd </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</header></uheader>
+        <div class="page-container">
+          <breadcrumbs class="ng-isolate-scope"><div class="hide-for-small-only nav-way" ng-show="$ctrl.crumble.trail.length>1">
+  <div class="row">
+	  <div class="small-12 columns">
+	    <nav role="navigation">
+	      <ul class="breadcrumbs">
+	        <!-- ngRepeat: bc in $ctrl.crumble.trail --><li ng-repeat="bc in $ctrl.crumble.trail" ng-class="{current:$last}" class="ng-scope"> <a ng-href="/unitel/" class="ng-binding" href="/unitel/">Нүүр хуудас</a></li><!-- end ngRepeat: bc in $ctrl.crumble.trail --><li ng-repeat="bc in $ctrl.crumble.trail" ng-class="{current:$last}" class="ng-scope"> <a ng-href="/unitel/product/" class="ng-binding" href="/unitel/product/">Бүтээгдэхүүн</a></li><!-- end ngRepeat: bc in $ctrl.crumble.trail --><li ng-repeat="bc in $ctrl.crumble.trail" ng-class="{current:$last}" class="ng-scope current"> <a ng-href="/unitel/product/postpaid" class="ng-binding" href="/unitel/product/postpaid">Дараа төлбөрт үйлчилгээ</a></li><!-- end ngRepeat: bc in $ctrl.crumble.trail -->
+	      </ul>
+	    </nav>
+	  </div>
+  </div>
+</div></breadcrumbs>
+        <!-- dddd {{currentUser}} -->
+          <div class="page-content">
+            <!-- ngView: --><ng-view class="ng-scope"><product-postpaid key="postpaid" products="$resolve.products" class="ng-scope ng-isolate-scope">
+<div class="tabbable ng-isolate-scope" justified="true" type="navType" tabset-class="row main  tabs small-up-2 medium-up-2 large-up-2">
+  <div class="" ng-class="{coolclass:isCool, full:isCoolFull}">
+    <ul class="row tabs row main  tabs small-up-2 medium-up-2 large-up-2  mar-center" ng-transclude="">
+  <!-- ngRepeat: item in ctrl.pscat --><li class="column tabs-title  is-active" ng-class="{'is-active': active}" active="product" ng-repeat="item in ctrl.pscat" select="ctrl.setSelectedCat(item,$index)">
+  <a ng-click="select()" ng-attr-aria-selected="{{active}}" tab-heading-transclude="" class="ng-binding" aria-selected="true"><tab-heading class="ng-scope">
+      <div class="ng-binding"> <span class="desc ng-binding">Энгийн</span></div>
+    </tab-heading></a>
+</li><!-- end ngRepeat: item in ctrl.pscat --><li class="column tabs-title " ng-class="{'is-active': active}" active="product" ng-repeat="item in ctrl.pscat" select="ctrl.setSelectedCat(item,$index)">
+  <a ng-click="select()" ng-attr-aria-selected="{{active}}" tab-heading-transclude="" class="ng-binding" aria-selected="false"><tab-heading class="ng-scope">
+      <div class="ng-binding"> <span class="desc ng-binding">Энтертайнмент</span></div>
+    </tab-heading></a>
+</li><!-- end ngRepeat: item in ctrl.pscat -->
+</ul>
+  </div>
+  <div class="tabs-content">
+    <!-- ngRepeat: tab in tabs --><div class="tabs-panel  is-active" ng-repeat="tab in tabs" ng-class="{'is-active': tab.active}">
+      <div tab-content-transclude="tab">
+    
+   
+  </div>
+    </div><!-- end ngRepeat: tab in tabs --><div class="tabs-panel " ng-repeat="tab in tabs" ng-class="{'is-active': tab.active}">
+      <div tab-content-transclude="tab">
+    
+   
+  </div>
+    </div><!-- end ngRepeat: tab in tabs -->
+  </div>
+</div>
+<div class="tabbable ng-isolate-scope" justified="true" type="navType" ng-init="ctrl.slickIndex=0" tabset-class="row main ps tabs small-up-2 medium-up-6">
+  <div class="" ng-class="{coolclass:isCool, full:isCoolFull}">
+    <ul class="row tabs row main ps tabs small-up-2 medium-up-6  mar-center" ng-transclude="">
+  <!-- ngRepeat: product in ctrl.psproducts --><li class="column tabs-title" ng-class="{'is-active': active}" active="product.active" ng-repeat="product in ctrl.psproducts" select="ctrl.setSelected(product,$index)" style="">
+  <a ng-click="select()" ng-attr-aria-selected="{{active}}" tab-heading-transclude="" class="ng-binding" aria-selected="false"><tab-heading class="ng-scope">
+      <div class="ng-binding">10'000 <span class="desc">Багц</span></div>
+    </tab-heading></a>
+</li><!-- end ngRepeat: product in ctrl.psproducts --><li class="column tabs-title  is-active" ng-class="{'is-active': active}" active="product.active" ng-repeat="product in ctrl.psproducts" select="ctrl.setSelected(product,$index)" style="">
+  <a ng-click="select()" ng-attr-aria-selected="{{active}}" tab-heading-transclude="" class="ng-binding" aria-selected="true"><tab-heading class="ng-scope">
+      <div class="ng-binding">20'000 <span class="desc">Багц</span></div>
+    </tab-heading></a>
+</li><!-- end ngRepeat: product in ctrl.psproducts --><li class="column tabs-title " ng-class="{'is-active': active}" active="product.active" ng-repeat="product in ctrl.psproducts" select="ctrl.setSelected(product,$index)">
+  <a ng-click="select()" ng-attr-aria-selected="{{active}}" tab-heading-transclude="" class="ng-binding" aria-selected="false"><tab-heading class="ng-scope">
+      <div class="ng-binding">22'000 <span class="desc">Багц</span></div>
+    </tab-heading></a>
+</li><!-- end ngRepeat: product in ctrl.psproducts -->
+</ul>
+  </div>
+  <div class="tabs-content">
+    <!-- ngRepeat: tab in tabs --><div class="tabs-panel" ng-repeat="tab in tabs" ng-class="{'is-active': tab.active}" style="">
+      <div tab-content-transclude="tab">
+    
+    <tab-content class="ng-scope">
+      <div class="section section-content">
+        <div class="row">
+          <div class="small-12 columns ng-binding" ng-bind-html="ctrl.selected.intro_txt"><h4>Онцлог, давуу талууд</h4>
+<ul class="check">
+<li>1.5 сая хэрэглэгчийн сүлжээнд ХЯЗГААРГҮЙ ЯРИА</li>
+<li>Задгай дата ТӨЛБӨР БОДОГДОХГҮЙ</li>
+<li>Энтертайнмент дата багц 50% хөнгөлөлттэй</li>
+<li>Ярианы үлдэгдэл эрх ХУРИМТЛАГДАНА</li>
+</ul></div>
+          <div></div>
+        </div>
+      </div>
+    </tab-content>
+  </div>
+    </div><!-- end ngRepeat: tab in tabs --><div class="tabs-panel  is-active" ng-repeat="tab in tabs" ng-class="{'is-active': tab.active}" style="">
+      <div tab-content-transclude="tab">
+    
+    <tab-content class="ng-scope">
+      <div class="section section-content">
+        <div class="row">
+          <div class="small-12 columns ng-binding" ng-bind-html="ctrl.selected.intro_txt"><h4>Онцлог, давуу талууд</h4>
+<ul class="check">
+<li>1.5 сая хэрэглэгчийн сүлжээнд ХЯЗГААРГҮЙ ЯРИА</li>
+<li>Задгай дата ТӨЛБӨР БОДОГДОХГҮЙ</li>
+<li>Энтертайнмент дата багц 50% хөнгөлөлттэй</li>
+<li>Ярианы үлдэгдэл эрх ХУРИМТЛАГДАНА</li>
+</ul></div>
+          <div></div>
+        </div>
+      </div>
+    </tab-content>
+  </div>
+    </div><!-- end ngRepeat: tab in tabs --><div class="tabs-panel " ng-repeat="tab in tabs" ng-class="{'is-active': tab.active}">
+      <div tab-content-transclude="tab">
+    
+    <tab-content class="ng-scope">
+      <div class="section section-content">
+        <div class="row">
+          <div class="small-12 columns ng-binding" ng-bind-html="ctrl.selected.intro_txt"><h4>Онцлог, давуу талууд</h4>
+<ul class="check">
+<li>1.5 сая хэрэглэгчийн сүлжээнд ХЯЗГААРГҮЙ ЯРИА</li>
+<li>Задгай дата ТӨЛБӨР БОДОГДОХГҮЙ</li>
+<li>Энтертайнмент дата багц 50% хөнгөлөлттэй</li>
+<li>Ярианы үлдэгдэл эрх ХУРИМТЛАГДАНА</li>
+</ul></div>
+          <div></div>
+        </div>
+      </div>
+    </tab-content>
+  </div>
+    </div><!-- end ngRepeat: tab in tabs -->
+  </div>
+</div>
+<div>
+  <div class="section"></div>
+  <div class="section section-content">
+    <div class="row">
+      <div class="small-12 columns">
+        <!-- ngIf: ctrl.dataLoaded --><slick ng-if="ctrl.dataLoaded" infinite="true" slides-to-show="2" current-index="ctrl.slickIndex" adoptive-height="true" responsive-default="true" center-padding="0" focus-on-select="true" dots="true" center-mode="true" class="bagts-con hover ps ng-scope ng-isolate-scope slick-initialized slick-slider slick-dotted" style=""><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable" style="padding: 0px;"><div class="slick-track" style="opacity: 1; width: 4410px; transform: translate3d(-1470px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 490px;" tabindex="-1"><div><div class="container ng-scope" ng-repeat="product in ctrl.psproducts" style="width: 100%; display: inline-block;">
+            <div class="bagts " ng-class="{active:product.id==curpack,'animated':animate}" product="product"> <!--  -->
+
+  <div class="title">
+    <div class="ng-binding">10'000 <!-- ngIf: product.type == 'premium' --><div ng-if="product.type == 'premium'" class="ng-scope" style="">БАГЦ</div><!-- end ngIf: product.type == 'premium' -->
+      <!-- ngIf: product.type == 'datasim' -->
+      <!-- <span ng-if="product.type=='smart'">{{product.prod_name}}</span> -->
+      <!-- ngIf: product.type=='free' -->
+    </div>
+  </div>
+  <div class="values">
+    <!-- ngIf: product.type == 'premium' --><ul ng-if="product.type == 'premium'" class="ng-scope" style="">
+      <!-- ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="data"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Дата хэрэглээ</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">300MB</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="on_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Сүлжээндээ яриа</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">22:00 - 08:00 үнэгүй</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="off_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Бүх сүлжээнд</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">200 мин</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks -->
+      <!-- <li>
+        <div class="icon">
+          <i class="looktv"></i>
+        </div>
+        <div class="values-con">
+          <t class="">LookTV</t><br>
+          <v>Үнэгүй</v>
+          <div class="open-link open"></div>
+        </div>
+        <div class="nemelt">
+          <ul>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Traffic суваг</li>
+          </ul>
+        </div>
+      </li> -->
+      <div class="nemelt">
+        <hr>
+        <li class="mar-btm-10"><b>Задгай хэрэглээний тариф</b></li>
+        <li class="tariff">
+          <div>Ярианы тариф</div>
+          <div class="ng-binding">- 60 төг</div>
+        </li>
+        <li class="tariff">
+          <div>Дата тариф /1Kb/</div>
+          <!-- ngIf: product.tariff_data== 0 --><div ng-if="product.tariff_data== 0" class="ng-scope">- 0 төг</div><!-- end ngIf: product.tariff_data== 0 -->
+          <!-- ngIf: product.tariff_data!= 0 -->
+        </li>
+        <li class="tariff">
+          <div>Мессэж тариф</div>
+          <div class="ng-binding">- 25 төг</div>
+        </li>
+      </div>  
+    </ul><!-- end ngIf: product.type == 'premium' -->
+    <!-- ngIf: product.type == 'smart' || product.type == 'free' -->
+    <!-- ngIf: product.type == 'datasim' -->
+    <div class="btn" ng-show="setme">
+      <button class="button success expanded ng-binding" ng-disabled="product.id==curpack || disabled" ng-click="setme(product)" tabindex="-1">Авах</button>
+    </div>
+  </div>
+</div>
+          </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 490px;" tabindex="-1"><div><div class="container ng-scope" ng-repeat="product in ctrl.psproducts" style="width: 100%; display: inline-block;">
+            <div class="bagts " ng-class="{active:product.id==curpack,'animated':animate}" product="product"> <!--  -->
+
+  <div class="title">
+    <div class="ng-binding">20'000 <!-- ngIf: product.type == 'premium' --><div ng-if="product.type == 'premium'" class="ng-scope" style="">БАГЦ</div><!-- end ngIf: product.type == 'premium' -->
+      <!-- ngIf: product.type == 'datasim' -->
+      <!-- <span ng-if="product.type=='smart'">{{product.prod_name}}</span> -->
+      <!-- ngIf: product.type=='free' -->
+    </div>
+  </div>
+  <div class="values">
+    <!-- ngIf: product.type == 'premium' --><ul ng-if="product.type == 'premium'" class="ng-scope" style="">
+      <!-- ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="data"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Дата хэрэглээ</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">1GB</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="on_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Сүлжээндээ яриа</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">Хязгааргүй</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="off_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Бусад сүлжээнд</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">200 мин</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks -->
+      <!-- <li>
+        <div class="icon">
+          <i class="looktv"></i>
+        </div>
+        <div class="values-con">
+          <t class="">LookTV</t><br>
+          <v>Үнэгүй</v>
+          <div class="open-link open"></div>
+        </div>
+        <div class="nemelt">
+          <ul>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Traffic суваг</li>
+          </ul>
+        </div>
+      </li> -->
+      <div class="nemelt">
+        <hr>
+        <li class="mar-btm-10"><b>Задгай хэрэглээний тариф</b></li>
+        <li class="tariff">
+          <div>Ярианы тариф</div>
+          <div class="ng-binding">- 60 төг</div>
+        </li>
+        <li class="tariff">
+          <div>Дата тариф /1Kb/</div>
+          <!-- ngIf: product.tariff_data== 0 --><div ng-if="product.tariff_data== 0" class="ng-scope">- 0 төг</div><!-- end ngIf: product.tariff_data== 0 -->
+          <!-- ngIf: product.tariff_data!= 0 -->
+        </li>
+        <li class="tariff">
+          <div>Мессэж тариф</div>
+          <div class="ng-binding">- 25 төг</div>
+        </li>
+      </div>  
+    </ul><!-- end ngIf: product.type == 'premium' -->
+    <!-- ngIf: product.type == 'smart' || product.type == 'free' -->
+    <!-- ngIf: product.type == 'datasim' -->
+    <div class="btn" ng-show="setme">
+      <button class="button success expanded ng-binding" ng-disabled="product.id==curpack || disabled" ng-click="setme(product)" tabindex="-1">Авах</button>
+    </div>
+  </div>
+</div>
+          </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 490px;" tabindex="-1"><div><div class="container ng-scope" ng-repeat="product in ctrl.psproducts" style="width: 100%; display: inline-block;">
+            <div class="bagts " ng-class="{active:product.id==curpack,'animated':animate}" product="product"> <!--  -->
+
+  <div class="title">
+    <div class="ng-binding">22'000 <!-- ngIf: product.type == 'premium' --><div ng-if="product.type == 'premium'" class="ng-scope" style="">БАГЦ</div><!-- end ngIf: product.type == 'premium' -->
+      <!-- ngIf: product.type == 'datasim' -->
+      <!-- <span ng-if="product.type=='smart'">{{product.prod_name}}</span> -->
+      <!-- ngIf: product.type=='free' -->
+    </div>
+  </div>
+  <div class="values">
+    <!-- ngIf: product.type == 'premium' --><ul ng-if="product.type == 'premium'" class="ng-scope" style="">
+      <!-- ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="on_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Сүлжээндээ яриа</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">Хязгааргүй</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="data"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Дата хэрэглээ</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">4GB</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="off_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Бусад сүлжээнд</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">-</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks -->
+      <!-- <li>
+        <div class="icon">
+          <i class="looktv"></i>
+        </div>
+        <div class="values-con">
+          <t class="">LookTV</t><br>
+          <v>Үнэгүй</v>
+          <div class="open-link open"></div>
+        </div>
+        <div class="nemelt">
+          <ul>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Traffic суваг</li>
+          </ul>
+        </div>
+      </li> -->
+      <div class="nemelt">
+        <hr>
+        <li class="mar-btm-10"><b>Задгай хэрэглээний тариф</b></li>
+        <li class="tariff">
+          <div>Ярианы тариф</div>
+          <div class="ng-binding">- 60 төг</div>
+        </li>
+        <li class="tariff">
+          <div>Дата тариф /1Kb/</div>
+          <!-- ngIf: product.tariff_data== 0 --><div ng-if="product.tariff_data== 0" class="ng-scope">- 0 төг</div><!-- end ngIf: product.tariff_data== 0 -->
+          <!-- ngIf: product.tariff_data!= 0 -->
+        </li>
+        <li class="tariff">
+          <div>Мессэж тариф</div>
+          <div class="ng-binding">- 25 төг</div>
+        </li>
+      </div>  
+    </ul><!-- end ngIf: product.type == 'premium' -->
+    <!-- ngIf: product.type == 'smart' || product.type == 'free' -->
+    <!-- ngIf: product.type == 'datasim' -->
+    <div class="btn" ng-show="setme">
+      <button class="button success expanded ng-binding" ng-disabled="product.id==curpack || disabled" ng-click="setme(product)" tabindex="-1">Авах</button>
+    </div>
+  </div>
+</div>
+          </div></div></div><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 490px;" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00"><div><div class="container ng-scope" ng-repeat="product in ctrl.psproducts" style="width: 100%; display: inline-block;">
+            <div class="bagts " ng-class="{active:product.id==curpack,'animated':animate}" product="product"> <!--  -->
+
+  <div class="title">
+    <div class="ng-binding">10'000 <!-- ngIf: product.type == 'premium' --><div ng-if="product.type == 'premium'" class="ng-scope" style="">БАГЦ</div><!-- end ngIf: product.type == 'premium' -->
+      <!-- ngIf: product.type == 'datasim' -->
+      <!-- <span ng-if="product.type=='smart'">{{product.prod_name}}</span> -->
+      <!-- ngIf: product.type=='free' -->
+    </div>
+  </div>
+  <div class="values">
+    <!-- ngIf: product.type == 'premium' --><ul ng-if="product.type == 'premium'" class="ng-scope" style="">
+      <!-- ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="data"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Дата хэрэглээ</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">300MB</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="on_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Сүлжээндээ яриа</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">22:00 - 08:00 үнэгүй</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="off_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Бүх сүлжээнд</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">200 мин</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks -->
+      <!-- <li>
+        <div class="icon">
+          <i class="looktv"></i>
+        </div>
+        <div class="values-con">
+          <t class="">LookTV</t><br>
+          <v>Үнэгүй</v>
+          <div class="open-link open"></div>
+        </div>
+        <div class="nemelt">
+          <ul>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Traffic суваг</li>
+          </ul>
+        </div>
+      </li> -->
+      <div class="nemelt">
+        <hr>
+        <li class="mar-btm-10"><b>Задгай хэрэглээний тариф</b></li>
+        <li class="tariff">
+          <div>Ярианы тариф</div>
+          <div class="ng-binding">- 60 төг</div>
+        </li>
+        <li class="tariff">
+          <div>Дата тариф /1Kb/</div>
+          <!-- ngIf: product.tariff_data== 0 --><div ng-if="product.tariff_data== 0" class="ng-scope">- 0 төг</div><!-- end ngIf: product.tariff_data== 0 -->
+          <!-- ngIf: product.tariff_data!= 0 -->
+        </li>
+        <li class="tariff">
+          <div>Мессэж тариф</div>
+          <div class="ng-binding">- 25 төг</div>
+        </li>
+      </div>  
+    </ul><!-- end ngIf: product.type == 'premium' -->
+    <!-- ngIf: product.type == 'smart' || product.type == 'free' -->
+    <!-- ngIf: product.type == 'datasim' -->
+    <div class="btn" ng-show="setme">
+      <button class="button success expanded ng-binding" ng-disabled="product.id==curpack || disabled" ng-click="setme(product)" tabindex="-1">Авах</button>
+    </div>
+  </div>
+</div>
+          </div></div></div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="1" aria-hidden="false" style="width: 490px;" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01"><div><div class="container ng-scope" ng-repeat="product in ctrl.psproducts" style="width: 100%; display: inline-block;">
+            <div class="bagts " ng-class="{active:product.id==curpack,'animated':animate}" product="product"> <!--  -->
+
+  <div class="title">
+    <div class="ng-binding">20'000 <!-- ngIf: product.type == 'premium' --><div ng-if="product.type == 'premium'" class="ng-scope" style="">БАГЦ</div><!-- end ngIf: product.type == 'premium' -->
+      <!-- ngIf: product.type == 'datasim' -->
+      <!-- <span ng-if="product.type=='smart'">{{product.prod_name}}</span> -->
+      <!-- ngIf: product.type=='free' -->
+    </div>
+  </div>
+  <div class="values">
+    <!-- ngIf: product.type == 'premium' --><ul ng-if="product.type == 'premium'" class="ng-scope" style="">
+      <!-- ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="data"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Дата хэрэглээ</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">1GB</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="on_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Сүлжээндээ яриа</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">Хязгааргүй</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="off_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Бусад сүлжээнд</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">200 мин</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks -->
+      <!-- <li>
+        <div class="icon">
+          <i class="looktv"></i>
+        </div>
+        <div class="values-con">
+          <t class="">LookTV</t><br>
+          <v>Үнэгүй</v>
+          <div class="open-link open"></div>
+        </div>
+        <div class="nemelt">
+          <ul>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Traffic суваг</li>
+          </ul>
+        </div>
+      </li> -->
+      <div class="nemelt">
+        <hr>
+        <li class="mar-btm-10"><b>Задгай хэрэглээний тариф</b></li>
+        <li class="tariff">
+          <div>Ярианы тариф</div>
+          <div class="ng-binding">- 60 төг</div>
+        </li>
+        <li class="tariff">
+          <div>Дата тариф /1Kb/</div>
+          <!-- ngIf: product.tariff_data== 0 --><div ng-if="product.tariff_data== 0" class="ng-scope">- 0 төг</div><!-- end ngIf: product.tariff_data== 0 -->
+          <!-- ngIf: product.tariff_data!= 0 -->
+        </li>
+        <li class="tariff">
+          <div>Мессэж тариф</div>
+          <div class="ng-binding">- 25 төг</div>
+        </li>
+      </div>  
+    </ul><!-- end ngIf: product.type == 'premium' -->
+    <!-- ngIf: product.type == 'smart' || product.type == 'free' -->
+    <!-- ngIf: product.type == 'datasim' -->
+    <div class="btn" ng-show="setme">
+      <button class="button success expanded ng-binding" ng-disabled="product.id==curpack || disabled" ng-click="setme(product)" tabindex="0">Авах</button>
+    </div>
+  </div>
+</div>
+          </div></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 490px;" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02"><div><div class="container ng-scope" ng-repeat="product in ctrl.psproducts" style="width: 100%; display: inline-block;">
+            <div class="bagts " ng-class="{active:product.id==curpack,'animated':animate}" product="product"> <!--  -->
+
+  <div class="title">
+    <div class="ng-binding">22'000 <!-- ngIf: product.type == 'premium' --><div ng-if="product.type == 'premium'" class="ng-scope" style="">БАГЦ</div><!-- end ngIf: product.type == 'premium' -->
+      <!-- ngIf: product.type == 'datasim' -->
+      <!-- <span ng-if="product.type=='smart'">{{product.prod_name}}</span> -->
+      <!-- ngIf: product.type=='free' -->
+    </div>
+  </div>
+  <div class="values">
+    <!-- ngIf: product.type == 'premium' --><ul ng-if="product.type == 'premium'" class="ng-scope" style="">
+      <!-- ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="on_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Сүлжээндээ яриа</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">Хязгааргүй</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="data"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Дата хэрэглээ</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">4GB</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="off_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Бусад сүлжээнд</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">-</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks -->
+      <!-- <li>
+        <div class="icon">
+          <i class="looktv"></i>
+        </div>
+        <div class="values-con">
+          <t class="">LookTV</t><br>
+          <v>Үнэгүй</v>
+          <div class="open-link open"></div>
+        </div>
+        <div class="nemelt">
+          <ul>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Traffic суваг</li>
+          </ul>
+        </div>
+      </li> -->
+      <div class="nemelt">
+        <hr>
+        <li class="mar-btm-10"><b>Задгай хэрэглээний тариф</b></li>
+        <li class="tariff">
+          <div>Ярианы тариф</div>
+          <div class="ng-binding">- 60 төг</div>
+        </li>
+        <li class="tariff">
+          <div>Дата тариф /1Kb/</div>
+          <!-- ngIf: product.tariff_data== 0 --><div ng-if="product.tariff_data== 0" class="ng-scope">- 0 төг</div><!-- end ngIf: product.tariff_data== 0 -->
+          <!-- ngIf: product.tariff_data!= 0 -->
+        </li>
+        <li class="tariff">
+          <div>Мессэж тариф</div>
+          <div class="ng-binding">- 25 төг</div>
+        </li>
+      </div>  
+    </ul><!-- end ngIf: product.type == 'premium' -->
+    <!-- ngIf: product.type == 'smart' || product.type == 'free' -->
+    <!-- ngIf: product.type == 'datasim' -->
+    <div class="btn" ng-show="setme">
+      <button class="button success expanded ng-binding" ng-disabled="product.id==curpack || disabled" ng-click="setme(product)" tabindex="0">Авах</button>
+    </div>
+  </div>
+</div>
+          </div></div></div><div class="slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" style="width: 490px;" tabindex="-1"><div><div class="container ng-scope" ng-repeat="product in ctrl.psproducts" style="width: 100%; display: inline-block;">
+            <div class="bagts " ng-class="{active:product.id==curpack,'animated':animate}" product="product"> <!--  -->
+
+  <div class="title">
+    <div class="ng-binding">10'000 <!-- ngIf: product.type == 'premium' --><div ng-if="product.type == 'premium'" class="ng-scope" style="">БАГЦ</div><!-- end ngIf: product.type == 'premium' -->
+      <!-- ngIf: product.type == 'datasim' -->
+      <!-- <span ng-if="product.type=='smart'">{{product.prod_name}}</span> -->
+      <!-- ngIf: product.type=='free' -->
+    </div>
+  </div>
+  <div class="values">
+    <!-- ngIf: product.type == 'premium' --><ul ng-if="product.type == 'premium'" class="ng-scope" style="">
+      <!-- ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="data"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Дата хэрэглээ</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">300MB</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="on_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Сүлжээндээ яриа</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">22:00 - 08:00 үнэгүй</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="off_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Бүх сүлжээнд</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">200 мин</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks -->
+      <!-- <li>
+        <div class="icon">
+          <i class="looktv"></i>
+        </div>
+        <div class="values-con">
+          <t class="">LookTV</t><br>
+          <v>Үнэгүй</v>
+          <div class="open-link open"></div>
+        </div>
+        <div class="nemelt">
+          <ul>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Traffic суваг</li>
+          </ul>
+        </div>
+      </li> -->
+      <div class="nemelt">
+        <hr>
+        <li class="mar-btm-10"><b>Задгай хэрэглээний тариф</b></li>
+        <li class="tariff">
+          <div>Ярианы тариф</div>
+          <div class="ng-binding">- 60 төг</div>
+        </li>
+        <li class="tariff">
+          <div>Дата тариф /1Kb/</div>
+          <!-- ngIf: product.tariff_data== 0 --><div ng-if="product.tariff_data== 0" class="ng-scope">- 0 төг</div><!-- end ngIf: product.tariff_data== 0 -->
+          <!-- ngIf: product.tariff_data!= 0 -->
+        </li>
+        <li class="tariff">
+          <div>Мессэж тариф</div>
+          <div class="ng-binding">- 25 төг</div>
+        </li>
+      </div>  
+    </ul><!-- end ngIf: product.type == 'premium' -->
+    <!-- ngIf: product.type == 'smart' || product.type == 'free' -->
+    <!-- ngIf: product.type == 'datasim' -->
+    <div class="btn" ng-show="setme">
+      <button class="button success expanded ng-binding" ng-disabled="product.id==curpack || disabled" ng-click="setme(product)" tabindex="-1">Авах</button>
+    </div>
+  </div>
+</div>
+          </div></div></div><div class="slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" style="width: 490px;" tabindex="-1"><div><div class="container ng-scope" ng-repeat="product in ctrl.psproducts" style="width: 100%; display: inline-block;">
+            <div class="bagts " ng-class="{active:product.id==curpack,'animated':animate}" product="product"> <!--  -->
+
+  <div class="title">
+    <div class="ng-binding">20'000 <!-- ngIf: product.type == 'premium' --><div ng-if="product.type == 'premium'" class="ng-scope" style="">БАГЦ</div><!-- end ngIf: product.type == 'premium' -->
+      <!-- ngIf: product.type == 'datasim' -->
+      <!-- <span ng-if="product.type=='smart'">{{product.prod_name}}</span> -->
+      <!-- ngIf: product.type=='free' -->
+    </div>
+  </div>
+  <div class="values">
+    <!-- ngIf: product.type == 'premium' --><ul ng-if="product.type == 'premium'" class="ng-scope" style="">
+      <!-- ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="data"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Дата хэрэглээ</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">1GB</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="on_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Сүлжээндээ яриа</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">Хязгааргүй</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="off_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Бусад сүлжээнд</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">200 мин</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks -->
+      <!-- <li>
+        <div class="icon">
+          <i class="looktv"></i>
+        </div>
+        <div class="values-con">
+          <t class="">LookTV</t><br>
+          <v>Үнэгүй</v>
+          <div class="open-link open"></div>
+        </div>
+        <div class="nemelt">
+          <ul>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Traffic суваг</li>
+          </ul>
+        </div>
+      </li> -->
+      <div class="nemelt">
+        <hr>
+        <li class="mar-btm-10"><b>Задгай хэрэглээний тариф</b></li>
+        <li class="tariff">
+          <div>Ярианы тариф</div>
+          <div class="ng-binding">- 60 төг</div>
+        </li>
+        <li class="tariff">
+          <div>Дата тариф /1Kb/</div>
+          <!-- ngIf: product.tariff_data== 0 --><div ng-if="product.tariff_data== 0" class="ng-scope">- 0 төг</div><!-- end ngIf: product.tariff_data== 0 -->
+          <!-- ngIf: product.tariff_data!= 0 -->
+        </li>
+        <li class="tariff">
+          <div>Мессэж тариф</div>
+          <div class="ng-binding">- 25 төг</div>
+        </li>
+      </div>  
+    </ul><!-- end ngIf: product.type == 'premium' -->
+    <!-- ngIf: product.type == 'smart' || product.type == 'free' -->
+    <!-- ngIf: product.type == 'datasim' -->
+    <div class="btn" ng-show="setme">
+      <button class="button success expanded ng-binding" ng-disabled="product.id==curpack || disabled" ng-click="setme(product)" tabindex="-1">Авах</button>
+    </div>
+  </div>
+</div>
+          </div></div></div><div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 490px;" tabindex="-1"><div><div class="container ng-scope" ng-repeat="product in ctrl.psproducts" style="width: 100%; display: inline-block;">
+            <div class="bagts " ng-class="{active:product.id==curpack,'animated':animate}" product="product"> <!--  -->
+
+  <div class="title">
+    <div class="ng-binding">22'000 <!-- ngIf: product.type == 'premium' --><div ng-if="product.type == 'premium'" class="ng-scope" style="">БАГЦ</div><!-- end ngIf: product.type == 'premium' -->
+      <!-- ngIf: product.type == 'datasim' -->
+      <!-- <span ng-if="product.type=='smart'">{{product.prod_name}}</span> -->
+      <!-- ngIf: product.type=='free' -->
+    </div>
+  </div>
+  <div class="values">
+    <!-- ngIf: product.type == 'premium' --><ul ng-if="product.type == 'premium'" class="ng-scope" style="">
+      <!-- ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="on_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Сүлжээндээ яриа</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">Хязгааргүй</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="data"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Дата хэрэглээ</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">4GB</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks --><li ng-repeat="perks in product.perks" class="ng-scope">
+        <div class="icon">
+          <i class="off_call"></i>
+        </div>
+        <div class="values-con">
+          <t class="ng-binding">Бусад сүлжээнд</t><br>
+          <v ng-bind-html="perks.name" class="ng-binding">-</v>
+          <!-- ngIf: perks.details.length > 0 -->
+        </div>
+        <div class="nemelt ng-hide" ng-show="perks.details.length > 0 &amp;&amp; product.open">
+          <ul>
+            <!-- ngRepeat: perk_detail in perks.details -->
+          </ul>
+        </div>
+      </li><!-- end ngRepeat: perks in product.perks -->
+      <!-- <li>
+        <div class="icon">
+          <i class="looktv"></i>
+        </div>
+        <div class="values-con">
+          <t class="">LookTV</t><br>
+          <v>Үнэгүй</v>
+          <div class="open-link open"></div>
+        </div>
+        <div class="nemelt">
+          <ul>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Кино багц (Ази, Монгол, Холливууд)</li>
+            <li>Traffic суваг</li>
+          </ul>
+        </div>
+      </li> -->
+      <div class="nemelt">
+        <hr>
+        <li class="mar-btm-10"><b>Задгай хэрэглээний тариф</b></li>
+        <li class="tariff">
+          <div>Ярианы тариф</div>
+          <div class="ng-binding">- 60 төг</div>
+        </li>
+        <li class="tariff">
+          <div>Дата тариф /1Kb/</div>
+          <!-- ngIf: product.tariff_data== 0 --><div ng-if="product.tariff_data== 0" class="ng-scope">- 0 төг</div><!-- end ngIf: product.tariff_data== 0 -->
+          <!-- ngIf: product.tariff_data!= 0 -->
+        </li>
+        <li class="tariff">
+          <div>Мессэж тариф</div>
+          <div class="ng-binding">- 25 төг</div>
+        </li>
+      </div>  
+    </ul><!-- end ngIf: product.type == 'premium' -->
+    <!-- ngIf: product.type == 'smart' || product.type == 'free' -->
+    <!-- ngIf: product.type == 'datasim' -->
+    <div class="btn" ng-show="setme">
+      <button class="button success expanded ng-binding" ng-disabled="product.id==curpack || disabled" ng-click="setme(product)" tabindex="-1">Авах</button>
+    </div>
+  </div>
+</div>
+          </div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 2" tabindex="-1">1</button></li><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 2" tabindex="0" aria-selected="true">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 2" tabindex="-1">3</button></li></ul></slick><!-- end ngIf: ctrl.dataLoaded -->
+        <unotice keyword="product_ps" class="ng-isolate-scope">
+  <!-- ngIf: ctrl.items.length --><ul class="warning ng-scope" ng-if="ctrl.items.length" ng-class="{'only':ctrl.items.length==1}" style="">
+    <!-- ngRepeat: item1 in ctrl.items track by item1.id --><li ng-repeat="item1 in ctrl.items track by item1.id" ng-bind-html="item1.content" class="ng-binding ng-scope"><p>*Дээрх үнэд НӨАТ ороогүй&nbsp;болно.</p></li><!-- end ngRepeat: item1 in ctrl.items track by item1.id --><li ng-repeat="item1 in ctrl.items track by item1.id" ng-bind-html="item1.content" class="ng-binding ng-scope"><p>*Багцад дагалдах дата эрх дууссанаас хойш тухайн сар дуустал 128Kbps хурдаар хязгааргүй дата ашиглах боломжтой.</p></li><!-- end ngRepeat: item1 in ctrl.items track by item1.id -->
+  </ul><!-- end ngIf: ctrl.items.length -->
+</unotice>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section-content ">
+  <div class="row">
+    <div class="tabbable ng-isolate-scope" tabset-class="help-menu">
+  <div class="" ng-class="{coolclass:isCool, full:isCoolFull}">
+    <ul class="row tabs help-menu  mar-center" ng-transclude="">
+      <li class="tabs-title  is-active" ng-class="{'is-active': active}">
+  <a ng-click="select()" ng-attr-aria-selected="{{active}}" tab-heading-transclude="" class="ng-binding" aria-selected="true"><tab-heading class="ng-scope">
+          <div class="icon"><i class="new"></i></div>
+          <span>Шинэ хэрэглэгч</span>
+        </tab-heading></a>
+</li>
+      <li class="tabs-title " ng-class="{'is-active': active}">
+  <a ng-click="select()" ng-attr-aria-selected="{{active}}" tab-heading-transclude="" class="ng-binding" aria-selected="false"><tab-heading class="ng-scope">
+          <div class="icon"><i class="change"></i></div>
+          <span> Багц шилжих</span>
+        </tab-heading></a>
+</li>
+      <li class="tabs-title " ng-class="{'is-active': active}">
+  <a ng-click="select()" ng-attr-aria-selected="{{active}}" tab-heading-transclude="" class="ng-binding" aria-selected="false"><tab-heading class="ng-scope">
+          <div class="icon"><i class="tips"></i></div>
+          <span>Үйлчилгээний заавар</span>
+        </tab-heading></a>
+</li>
+      <li class="tabs-title " ng-class="{'is-active': active}">
+  <a ng-click="select()" ng-attr-aria-selected="{{active}}" tab-heading-transclude="" class="ng-binding" aria-selected="false"><tab-heading class="ng-scope">
+          <div class="icon"><i class="help"></i></div>
+          <span>Тусламж</span>
+        </tab-heading></a>
+</li>
+    </ul>
+  </div>
+  <div class="tabs-content">
+    <!-- ngRepeat: tab in tabs --><div class="tabs-panel  is-active" ng-repeat="tab in tabs" ng-class="{'is-active': tab.active}">
+      <div tab-content-transclude="tab">
+        
+        <tab-content class="ng-scope">
+          <div class="small-12 columns">
+            <p class="mar-top-30"> Дараа төлбөрт үйлчилгээний шинэ хэрэглэгч болохын тулд та 18 нас хүрсэн байх шаардлагатай ба өөрт ойр байрлах Юнителийн салбарт цахим үнэмлэхтэйгээ ирж, гэрээ хийнэ үү.</p>
+            <h6>Дараа төлбөрт үйлчилгээний хэрэглэгч болохын тулд:</h6>
+            <ul class="check">
+              <li>Дугаараа сонгоно.</li>            
+              <li>Бүртгэлийн хураамж төлнө. </li>
+              <li> Азын дугаар сонгосон тохиолдолд азын дугаарын үнийг нэмж төлнө.</li>
+              <li> Гэрээ байгуулан дараа төлбөрт үйлчилгээний шинэ хэрэглэгч болно.</li>
+            </ul>
+            <p>
+              Та онлайнаар дугаар худалдан авч, Улаанбаатар хотын төвийн бүсийн байршилд үнэгүй хүргүүлэн авах боломжтой.
+            </p>
+            <a class="button" href="service/number">ШИНЭ ДУГААР АВАХ</a>
+            <div class="bagts-con number">
+              <ul class=" row small-up-1 medium-up-3 large-up-4 block">
+                <li class="column">
+                  <div class="bagts">
+                    <div class="title">
+                      <div>Энгийн дугаар</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t>Бүртгэлийн хураамж</t><br>
+                            <v class="ng-binding">10'000 төг</v>
+                          </div>
+                        </li>
+                        <li>
+                        <div class="values-con">
+                          <t>Барьцаа төлбөр</t><br>
+                          <v class="ng-binding">0 төг</v>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="values-con">
+                          <t>Үнэлгээ</t><br>
+                          <v>-</v>
+                        </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts">
+                    <div class="title">
+                      <div>Мөнгөн дугаар</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t>Бүртгэлийн хураамж</t><br>
+                            <v class="ng-binding">10'000 төг</v>
+                          </div>
+                        </li>
+                        <li>
+                        <div class="values-con">
+                          <t>Барьцаа төлбөр</t><br>
+                          <v class="ng-binding">0 төг</v>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="values-con">
+                            <t>Үнэлгээ</t><br>
+                            <v class="ng-binding">300'000 төг</v>
+                        </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts">
+                    <div class="title">
+                      <div>Алтан дугаар</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t>Бүртгэлийн хураамж</t><br>
+                            <v class="ng-binding">10'000 төг</v>
+                          </div>
+                        </li>
+                        <li>
+                        <div class="values-con">
+                          <t>Барьцаа төлбөр</t><br>
+                          <v class="ng-binding">0 төг</v>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="values-con">
+                            <t>Үнэлгээ</t><br>
+                            <v class="ng-binding">800'000 төг</v>
+                        </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts">
+                    <div class="title">
+                      <div>Бриллиант дугаар</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t>Бүртгэлийн хураамж</t><br>
+                            <v class="ng-binding">10'000 төг</v>
+                          </div>
+                        </li>
+                        <li>
+                          <t>Барьцаа төлбөр</t><br>
+                          <v class="ng-binding">0 төг</v>
+                        </li>
+                        <li>
+                          <div class="values-con">
+                              <t>Үнэлгээ</t><br>
+                              <v class="ng-binding">2'000'000 төг</v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="warning">
+                <li><p>*Мөнгөн дугаар 8*ab8*ab , 8*aa8*aa, 8*aaaa8*, 8*xx aabb, 8*xx abab</p></li>
+                <li><p>*Алтан дугаар 8*xаaaaa, 8*ххаааа</p></li>
+                <li><p>*Бриллиант дугаар 8*aaаааа </p></li>
+                <li><p>Та 80, 86, 88, 89 дугаарлалтуудаас авах боломжтой.</p></li>
+              </ul>
+
+            </div>
+
+            <h5 style="margin-top:20px;"><em>Урьдчилсан төлбөртөөс дараа төлбөрт үйлчилгээ рүү шилжих бол <a modal-static-simple="modalCustomPS1.html" window-class="type1"> ЭНД</a> дарна уу</em></h5>
+            <script id="modalCustomPS1.html" type="text/ng-template">
+              <div class="title mar-btm">
+                 <h6 >Дараа төлбөрт үйлчилгээ рүү шилжих </h6>
+              </div>
+              <div class="content">
+                <p class="text-justify">Та өөрийн ашиглаж буй урьдчилсан төлбөрт үйлчилгээний дугаартайгаа Дараа төлбөрт үйлчилгээ рүү шилжихийг хүсвэл өөрт ойр байрлах Юнителийн үндсэн салбарт цахим үнэмлэхтэйгээ хандана уу.</p>
+                <b>Дараа төлбөрт үйлчилгээний хэрэглэгч болохын тулд:</b>
+                <ol >
+                  <li>Багцаа сонгож БАРЬЦАА ТӨЛБӨР байршуулна.</li>
+                  <li>Гэрээ байгуулан дараа төлбөрт үйлчилгээний хэрэглэгч болно.</li>
+                </ol>
+                <button class="close-button" ng-click="$dismiss()" aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </script>
+          </div>
+        </tab-content>
+      </div>
+    </div><!-- end ngRepeat: tab in tabs --><div class="tabs-panel " ng-repeat="tab in tabs" ng-class="{'is-active': tab.active}">
+      <div tab-content-transclude="tab">
+        
+        <tab-content class="ng-scope">
+          <div class="small-12 columns">
+            <h6 class="mar-top-30">Багц шилжихийн тулд:</h6>
+            <ol>
+              <li>Шилжих үйлчилгээний багцаа сонгоно.</li>
+              <li>Сонгосон багц руу шилжихэд барьцаа төлбөр хүрэхгүй тохиолдолд барьцаа төлбөр нэмж байршуулна.</li>
+              <li>Сар эхлэхээс өмнө багц солих хүсэлт өгнө.</li>
+              <li>Дараа сарын 1-ний өдрөөс сонгосон багц руу шилжинэ.</li>
+            </ol>
+            
+            <h6>Шилжих боломжтой багцууд</h6>
+            <div class="bagts-con number">
+              <ul class=" row small-up-1 medium-up-3 large-up-5 block">
+                <li class="column">
+                  <div class="bagts s">
+                    <div class="title">
+                      <div>Багц 10'000</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t class="font-12">Шилжих боломжтой дугаар</t><br>
+                            <v>8*00-8*09</v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts s">
+                    <div class="title">
+                      <div>Багц 20'000</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t class="font-12">Шилжих боломжтой дугаар</t><br>
+                            <v>8*00-8*09</v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts s">
+                    <div class="title">
+                      <div>Багц 22'000</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t class="font-12">Шилжих боломжтой дугаар</t><br>
+                            <v>8*00-8*09</v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts s">
+                    <div class="title">
+                      <div>Багц 30'000</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t class="font-12">Шилжих боломжтой дугаар</t><br>
+                            <v>8*00-8*09</v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts s">
+                    <div class="title">
+                      <div>Багц 33'000</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t class="font-12">Шилжих боломжтой дугаар</t><br>
+                            <v>8*00-8*09</v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts s">
+                    <div class="title">
+                      <div>Багц 40'000</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t class="font-12">Шилжих боломжтой дугаар</t><br>
+                            <v>8*00-8*09, 8*10-8*11 </v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts s">
+                    <div class="title">
+                      <div>Багц 50'000</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t class="font-12">Шилжих боломжтой дугаар</t><br>
+                            <v>8*00-8*09, 8*10-8*11 </v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts s">
+                    <div class="title">
+                      <div>Багц 60'000</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t class="font-12">Шилжих боломжтой дугаар</t><br>
+                            <v>8*00-8*09, 8*10-8*11</v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="column">
+                  <div class="bagts s">
+                    <div class="title">
+                      <div>Багц 100'000</div>
+                    </div>
+                    <div class="values">
+                      <ul>
+                        <li>
+                          <div class="values-con">
+                            <t class="font-12">Шилжих боломжтой дугаар</t><br>
+                            <v>8*00-8*09, 8*10-8*11</v>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="warning mar-btm">
+              <li><p>8*10, 8*11 дугаартай хэрэглэгчид зөвхөн багц 40'000-с дээш багцууд руу шилжих боломжтой.</p></li>
+            </ul>
+            <h6 class="mar-top">Та өөрийн ашиглаж буй үйлчилгээний багцаа солихыг хүсвэл:</h6>
+            <ul class="mar-btm-30">
+              <li>1414 лавлах төвийн утас руу өөрийн дугаараас холбогдож багц солих.</li>
+              <li>Юнителийн үндсэн салбарт цахим үнэмлэхтэйгээ хандаж багц солих боломжтой. Салбарын байршил харах бол <a href="branch">ЭНД</a> дарна уу.</li>
+            </ul>
+            <!-- <a href="service/package" class="button had-icon icon-change">Багц солих</a> -->
+          </div>
+        </tab-content>
+      </div>
+    </div><!-- end ngRepeat: tab in tabs --><div class="tabs-panel " ng-repeat="tab in tabs" ng-class="{'is-active': tab.active}">
+      <div tab-content-transclude="tab">
+        
+        <tab-content class="ng-scope">
+          <div class="small-12 columns">
+            
+            <ul class="row medium-up-2 block mar-top-30">
+              <li class="column zaavar">
+                <p>ТӨЛБӨР ШАЛГАХ</p>
+                <div class="sms-zaavar">
+                  <div class="step has-icon call">*1477#</div>
+                  <div class="step ">1</div>
+                </div>
+                <div class="sms-zaavar">
+                  <div class="step ">See</div>
+                  <div class="step has-icon sms">1477</div>
+                </div>
+              </li>
+              <li class="column zaavar">
+                <p>БАГЦЫН ЭРХ ШАЛГАХ</p>
+                <div class="sms-zaavar">
+                  <div class="step has-icon call">*1478#</div>
+                </div>
+                <div class="sms-zaavar">
+                  <div class="step ">See</div>
+                  <div class="step has-icon sms">1478</div>
+                </div>
+              </li>
+            </ul>
+
+             <p>Та өөрийн эрхээр нэвтэрч орсноор хэрэглээ хянах болон төлбөрөө шалгах боломжтой. Нэвтрэх бол <a log-me-in="" class="ng-isolate-scope">ЭНД</a> дарна уу.</p>
+          </div>
+        </tab-content>
+      </div>
+    </div><!-- end ngRepeat: tab in tabs --><div class="tabs-panel " ng-repeat="tab in tabs" ng-class="{'is-active': tab.active}">
+      <div tab-content-transclude="tab">
+        
+        <tab-content class="ng-scope">
+          <div class="row mar-top-30">
+            <ufaq keyword="product_ps" class="ng-isolate-scope"><accordion class="faq"><ul class="accordion" ng-transclude="">
+  <!-- ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Багцад дагалдах эрхээ ашиглаж амжаагүй бол яах бэ?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Багцад дагалдах эрхээ ашиглаж амжаагүй бол яах бэ?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Та багцад дагалдах минутын эрхээ ашиглаж амжаагүй тохиолдолд үлдэгдэл минутын эрхээ дараагийн 1 &nbsp;сардаа ашиглах боломжтой. Харин багцад дагалдах дата эрх сар дамнаж хуримтлагдахгүй.</p></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Төлбөр болон багцад дагалдах эрхээ хэрхэн шалгах бэ?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Төлбөр болон багцад дагалдах эрхээ хэрхэн шалгах бэ?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Та хүссэн үедээ өдөрт хэдэн ч удаа төлбөр болон багцын эрхээ шалгах боломжтой.</p>
+<h5>Заавар:</h5>
+<ul>
+<li>www.unitel.mn вэбсайт болон Unitel аппликейшнийг ашиглан төлбөрийн мэдээлэл болон багцад дагалдах эрхээ шалгана. Нэвтрэх бол <a href="login">ЭНД</a> дарна уу.</li>
+<li>Төлбөр шалгахдаа <strong>*1477#</strong> дугаарт залган <strong>1</strong> товчийг дарах эсвэл <strong>1477</strong> дугаарт <strong>SEE</strong> гэсэн мессэж илгээнэ.</li>
+<li>Багцын эрхээ шалгахдаа: <strong>*1478#</strong> дугаарт залгах эсвэл <strong>1478</strong> дугаарт <strong>SEE</strong> гэсэн мессэж илгээнэ.</li>
+</ul>
+<p>&nbsp;</p>
+<p class="help-text success">Сар бүрийн 1-5ны хооронд буюу өмнөх сарын төлбөрийн нэхэмжлэх бодогдож байх хугацаанд төлбөрөө шалгах боломжгүй.</p></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Төлбөрөө хэзээ, хэрхэн төлөх бэ?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Төлбөрөө хэзээ, хэрхэн төлөх бэ?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Та өмнөх сарын төлбөрөө сар бүрийн 20-ны өдөр багтаан төлөх боломжтой. Хугацаандаа төлбөрөө төлөөгүй тохиолдолд 21-ний өдөр таны клип үйлчилгээ хаагдах ба цаашилбал гадагш залгах, гаднаас дуудлага хүлээн авах боломжгүй болно.</p>
+<h5>Төлбөр төлөх боломжууд:</h5>
+<ol>
+<li>www.unitel.mn вэбсайт болон Unitel аппликейшн-р</li>
+<li>Банкны дансаар
+<ul>
+<li>Голомт - 8115006438</li>
+<li>Капитал банк – 2046008154</li>
+<li>Хаан банк - 5038035092</li>
+<li>Хас банк - 5000420765</li>
+<li>Худалдаа хөгжлийн банк - 490009704</li>
+<li>Төрийн банк - 106000024579</li>
+<li>Үндэсний хөрөнгө оруулалтын банк – 2999000563</li>
+</ul>
+</li>
+<li>Мобайл диллерээр</li>
+<li>Үйлчилгээний салбараар</li>
+<li>Интернэт банкаар</li>
+<li>Киоскоор</li>
+<li>Агентаар</li>
+</ol>
+<p>&nbsp;</p>
+<p class="help-text">Та банкны дансаар болон интернэт банкаар төлбөрөө төлөх бол гүйлгээний утга дээр гар утасны дугаараа заавал бичнэ үү.</p></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Дата хэрэглээний төлбөр задгайгаар бодогдох уу?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Дата хэрэглээний төлбөр задгайгаар бодогдох уу?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Таны багцад дагалдах дата эрх дууссан тохиолдолд хурд 128Kbps болж буурах ба задгай төлбөр бодогдохгүй хязгааргүй ашиглах боломжтой.</p>
+<p class="help-text">Багц 10'000 - 100'000-с бусад үйлчилгээний багц ашигладаг бол дата тариф задгайгаар бодогдоно.</p></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Багцад дагалдах дата эрх дуусч хурд 128Kbps болсон үед хурдаа хэрхэн өсгөх боломжтой вэ?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Багцад дагалдах дата эрх дуусч хурд 128Kbps болсон үед хурдаа хэрхэн өсгөх боломжтой вэ?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><h5>Та хурдаа өсгөхийн тулд</h5>
+<ul>
+<li>Нэмэлт дата багц авах. Дата багц авах бол <a href="../../../../unitel/service/data">ЭНД </a>дарна уу.</li>
+</ul></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Сарын сүүлээр шинэ дугаар авахад төлбөр хэрхэн бодогдох вэ?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Сарын сүүлээр шинэ дугаар авахад төлбөр хэрхэн бодогдох вэ?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Та сарын хэдний өдрөөс шинэ хэрэглэгч болохоос хамаарч дараах байдлаар төлбөр бодогдож, сарын суурь хураамж дагалдах эрх орно.</p>
+<ul>
+<li>Сарын 10-ны дотор багцын шинэ хэрэглэгч болбол тухайн багцын суурь хураамж болон багцын дагалдах эрх бүтэн тооцогдоно.</li>
+<li>Сарын 11-20-ны дотор багцын шинэ хэрэглэгч болбол тухайн багцын суурь хураамж болон багцын дагалдах эрх 2/3-оор тооцогдоно.</li>
+<li>Сарын 21-31-ний дотор шинэ багцын хэрэглэгч болбол тухайн багцын суурь хураамж болон багцын дагалдах эрх 1/3-оор тооцогдоно.</li>
+</ul></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Дугаараа ашиглахгүй тохиолдолд хадгалуулж болох уу?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Дугаараа ашиглахгүй тохиолдолд хадгалуулж болох уу?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Та өөрт ойр байрлах Юнителийн үндсэн салбарт цахим үнэмлэхтэйгээ ирж дугаар хадгалах үйлчилгээг аваарай. Салбарын байршил харах бол <a href="../../../unitel/branch">ЭНД</a> дарна уу.</p>
+<h5>Дугаар хадгалах үйлчилгээний тариф:</h5>
+<ul>
+<li>Багц 10’000 - 33’000-ийн хэрэглэгч бол 1 сарын 5’000 төг</li>
+<li>Багц 40’000 - 100’000-ийн хэрэглэгч бол 1 сарын 10’000 төг</li>
+</ul>
+<p class="help-text">&nbsp;</p>
+<p class="help-text">Та дугаар хадгалах үйлчилгээг авахын тулд төлбөрийн үлдэгдэлгүй байх шаардлагатай.</p></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Дугаарын сүүлийн 4 оронг солих боломжтой юу?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Дугаарын сүүлийн 4 оронг солих боломжтой юу?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Та өөрийн дугаарын сүүлийн 4 оронг солихыг хүсвэл өөрт ойр байрлах Юнителийн үндсэн салбарт цахим үнэмлэхтэйгээ хандана уу. Салбарын байршил харах бол <a href="../../../unitel/branch">ЭНД</a> дарна уу.</p>
+<p>Дугаарын сүүлийн 4 орон солих үйлчилгээний тариф: <strong>15’000 төг</strong></p>
+<p class="help-text">Хэрэв та азын дугаар сонгосон бол тухайн азын дугаарын үнэлгээг нэмж төлнө.</p></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Дугаарын эзэмших эрхийг хэрхэн шилжүүлэх вэ?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Дугаарын эзэмших эрхийг хэрхэн шилжүүлэх вэ?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Та өөрийн дугаараа бусдад шилжүүлэхийг хүсвэл шилжүүлэн авах гэж буй хүнтэйгээ өөрт ойр байрлах Юнителийн үндсэн салбарт цахим үнэмлэхтэйгээ хандана уу. Салбарын байршил харах бол <a href="../../../unitel/branch">ЭНД</a> дарна уу.</p>
+<p class="help-text">Эзэмших эрх шилжүүлэхэд төлбөрийн үлдэгдэлгүй байх шаардлагатай ба дугаарын ашигласан хугацаа болон бусад дагалдах эрхүүд устана.</p></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="LookTV үйлчилгээний эрхээ хэрхэн ашиглах вэ?">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">LookTV үйлчилгээний эрхээ хэрхэн ашиглах вэ?</a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><ul>
+<li>Хэрвээ та LookTV хэрэглэгч бол өөрийн LookTV аккаунт-д утасны дугаараа бүртгүүлэн баталгаажуулах үед LookTV багцад дагалдах эрх идэвхэжнэ.&nbsp;</li>
+<li>Хэрвээ та LookTV хэрэглэгч биш бол Appstore болон Playstore-оос&nbsp; LookTV аппликейшн татан бүртгүүлэх хэсэгт өөрийн Email эсвэл Facebook хаягаар нэвтрэн үнэ төлбөргүй бүртгүүлнэ. Утасны дугаар бүртгүүлэх хэсэгт утасны дугаараа оруулан баталгаажуулах үед LookTV багцад дагалдах эрх идэвхэжнэ.&nbsp;</li>
+</ul></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Миний дугаар өөр LookTV аккаунт-д бүртгэгдсэн бол хэрхэн өөрийн аккаунт-д холбох вэ? ">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Миний дугаар өөр LookTV аккаунт-д бүртгэгдсэн бол хэрхэн өөрийн аккаунт-д холбох вэ? </a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Та өөрийн утасны дугаараас 1414, 77771474 лавлах утсанд хандан хуучин аккаунтаас дугаараа салгуулж, өөрийн аккаунт-д холбох боломжтой.&nbsp;</p></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items --><li class="accordion-item ng-scope ng-isolate-scope" ng-class="{ 'is-active': $ctrl.isOpen }" ng-repeat="item in ctrl.items" heading="Дугаар илрүүлэх нэмэлт эрх гэж юу вэ? Хэрхэн ашиглах вэ? ">
+  <a ng-click="$ctrl.isOpen = !$ctrl.isOpen" class="accordion-title ng-binding" accordion-transclude="">Дугаар илрүүлэх нэмэлт эрх гэж юу вэ? Хэрхэн ашиглах вэ? </a>
+  <div class="accordion-content ng-hide" style="display: block;" ng-show="$ctrl.isOpen" ng-transclude="">
+    <div ng-bind-html="item.content" class="ng-binding ng-scope"><p>Таны утсанд дугаараа нууцалсан дуудлага орж ирэхгүй бөгөөд нууцлагдсан дуудлагын дугаар харагдагдах болно. Уг нэмэлт эрх нь зөвхөн Багц 60'000 болон Багц 100'000-д нэмэлтээр дагалдана</p></div>
+  </div>
+</li><!-- end ngRepeat: item in ctrl.items -->
+</ul>
+</accordion></ufaq>
+          </div>
+        </tab-content>
+      </div>
+    </div><!-- end ngRepeat: tab in tabs -->
+  </div>
+</div>
+  </div>
+</div>
+<div class="section section-content">
+  <div class="row">
+    <div class="small-12 columns">
+      <h4 class="mar-btm-40 text-center mar-top-30"><span class="title-box">Санал болгох үйлчилгээ</span></h4>
+      <ul class="row small-up-1 medium-up-3 block vas-list">
+        <li class="column">
+          <a href="vaproduct/unittransfer">
+            <div class="title">
+                <i class="vas-icon p-negjshiljuuleh"></i>
+                <div><h5> Нэгж шилжүүлэх </h5>
+                      <p>Та хүссэн үедээ бусдад хоногтой болон хоноггүй нэгж шилжүүлэх боломжтой</p>
+                </div>
+            </div>
+          </a>
+        </li>
+        <li class="column">
+          <a href="vaproduct/sms">
+            <div class="title">
+                <i class="vas-icon p-smsbagts"></i>
+                <div><h5> Мессэж багц </h5>
+                    <p>Дараа төлбөрт хэрэглэгчдэд зориулсан мессэж багцууд</p>
+                </div>
+            </div>
+          </a>
+        </li>
+        <li class="column">
+          <a href="vaproduct/unimusic">
+            <div class="title">
+                <i class="vas-icon p-unimusic"></i>
+                <div>
+                  <h5> Юнимюзик</h5>
+                     <p>Тань руу залгасан хүн бүрт энгийн дохионы оронд дуртай дууг нь зориулаарай</p>
+                </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="text-center small-12 columns">
+        <a class="button secondary small" href="product/vaproduct">БУСАД НЭМЭЛТ ҮЙЛЧИЛГЭЭ</a>
+      </div>
+    </div>
+  </div>
+</div>
+</product-postpaid></ng-view>
+          </div>
+          <ufooter class="ng-isolate-scope">
+   <div class="footer-cont">
+      <div id="sticky-wrapper" class="sticky-wrapper" style="height: 60px;"><footer sticky="" init-on-load="true" responsive-width="true" bottom-spacing="1" class="ng-isolate-scope" style="width: 1495px;">
+       <div class="row">
+         <ul>
+           <li><a href="about">Бидний тухай</a></li>
+           <li class="ver-line "><a>|</a></li>
+           <li><a href="branch">Салбарын байршил</a></li>
+           <li class="ver-line"><a>|</a></li>
+           <li><a href="news">Хэвлэлийн мэдээ</a></li>
+           <li class="ver-line"><a>|</a></li>
+           <li><a href="hr">Хүний нөөц</a></li>
+           <li class="ver-line"><a>|</a></li>
+           <li><a href="contact">Холбоо барих</a></li>
+           <li class="right">© 2006-2020 Юнител групп</li>
+         </ul>
+       </div>
+     </footer></div>
+   </div></ufooter>
+        </div>
+      </div>
+    <div class="js-off-canvas-exit"></div></div>
+  </div>

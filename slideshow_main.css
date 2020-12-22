@@ -53,3 +53,12 @@
     background-color: #78c71f;
     border-radius: 8px;
 }
+.icons {
+  height: 64px;
+  width: 53px;
+}
+
+.icons:hover {
+  height: 80px;
+  width: 72px;
+}
