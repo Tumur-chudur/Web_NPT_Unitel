@@ -32,4 +32,97 @@
   font-size: 14px;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: timesnewroman;
+  background-color: #2EBCED;
+  background-size: cover;
+  background-position: center;
+}
+.sign-up-form
+{
+  width: 300px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  background:#fff;
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+}
+.sign-up-form h1
+{
+  color: lc8adb;
+  margin-bottom: 30px;
+}
+.input-box{
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #999;
+  outline: none;
+}
+button
+{
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  outline: none;
+  cursor: pointer;
+}
+.sign-btn
+{
+  background-color: #2c8adb;
+}
+.twitter-btn
+{
+  background-color: #1c8adb;
+}
+a
+{
+  text-decoration: none;
+}
+hr
+{
+  margin-top: 20px;
+  width: 80%;
+}
+.or
+{
+  background: #fff;
+  width: 30px;
+  margin: -19px auto 10px;
+}
+img 
+{
+  width: 70px;
+}
+
+#pop
+{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding:50px;
+  box-shadow: 0 5px 30px rgba(0,0,0,.30);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#pop.active
+{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition:0;
+}
+
+>>>>>>> main
+}
+
 
