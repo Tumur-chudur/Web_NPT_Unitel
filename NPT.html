@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="slideshow_main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="signup.css">
     <title>NTP page</title>
 </head>
 <body>
@@ -58,22 +59,38 @@
                                 <li class="subitem"><a href="#">Бусад</a></li>
                             </ul>
                         </li>                        
-                        <li class="navitem navbutton"><a href="signup.html">Нэвтрэх</a></li>
+                        <li class="navitem navbutton" id="blur"><a href="#" onclick="change()" id="togg">Нэвтрэх</a></li>
+                        <li id="pop"><center>
+                        	<img src="user-icon.png">
+				            <h1>Sign Up Now</h1>
+				            <form>
+				                <input type="email" class="input-box" placeholder="Your Email">
+				                <input type="password" class="input-box" placeholder="Your Password">
+				                <p><span><input type="checkbox"> </span>I agree to the terms of services</p>
+				                <button type="button" class="signup-btn">Sign Up
+				                </button>
+				                <hr>
+				                <p class="or">OR</p>
+				                <button type="button" class="twitter-btn">Login with twitter</button>
+				                <p> Do you have an account ?<a href="#">Sign in</a></p>
+				            </form>
+				                <a href="#" onclick="change()" id="togg">Гарах</a>
+                        </center></li>
                         <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>  
                     </ul>                    
                 </nav>
                 <div class="navdiv">|</div>
             </header>
         <main>
-            <div id="slideshow">
-              <div class="slide-wrapper">
-                <div class="slide"><img src="zuragnuud/banner1.jpg"></div>
-                <div class="slide"><img src="zuragnuud/banner2.png"></div>
-                <div class="slide"><img src="zuragnuud/banner3.png"></div>
-                <div class="slide"><img src="zuragnuud/banner4.png"></div>
-                <div class="slide"><img src="zuragnuud/banner5.jpg"></div>
-                <div class="slide"><img src="zuragnuud/banner6.png"></div>
-              </div>
+            <div id="slidercontainer">
+                <div class="showSlide fade"><img src="zuragnuud/banner1.jpg"></div>
+                <div class="showSlide fade"><img src="zuragnuud/banner2.png"></div>
+                <div class="showSlide fade"><img src="zuragnuud/banner3.png"></div>
+                <div class="showSlide fade"><img src="zuragnuud/banner4.png"></div>
+                <div class="showSlide fade"><img src="zuragnuud/banner5.jpg"></div>
+                <div class="showSlide fade"><img src="zuragnuud/banner6.png"></div>
+		        <a class="left" onclick="nextSlide(-1)">❮</a>  
+		        <a class="right" onclick="nextSlide(1)">❯</a>                 
             </div>        
             <section>
              
@@ -199,5 +216,15 @@
        </footer>  
     </div>
      <script src="nav.js"></script>
+     <script src="slider.js"></script>
+     <script type="text/javascript">
+     	    function change(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            
+            var pop = document.getElementById('pop');
+            pop.classList.toggle('active');                
+            }
+     </script>
 </body>
 </html>

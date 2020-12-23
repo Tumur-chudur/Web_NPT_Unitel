@@ -1,15 +1,14 @@
-.body {
+* {
 	margin: 0px;
 	padding: 0px;
 	font-family: timesnewroman;
-	background-image: url(back.jpg);
 	background-size: cover;
 	background-position: center;
 }
 .sign-up-form
 {
 	width: 300px;
-	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	box-shadow: 0 0 3px 0 rgba(0,0,0,30);
 	background:#fff;
 	padding: 20px;
 	margin: 8% auto 0;
@@ -17,23 +16,23 @@
 }
 .sign-up-form h1
 {
-	color: #78c81e;
+	color: lc8adb;
 	margin-bottom: 30px;
 }
 .input-box{
-	border-radius: 20px;
+	border-radius: 10px;
 	padding: 10px;
 	margin: 10px 0;
 	width: 100%;
-	border: 1px solid #78c81e;
+	border: 1px solid #999;
 	outline: none;
 }
 button
 {
-	color: black;
+	color: #f1f1f1;
 	width: 100%;
 	padding: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	font-size: 15px;
 	margin: 10px 0;
 	outline: none;
@@ -41,11 +40,13 @@ button
 }
 .sign-btn
 {
-	background-color: #78c81e;
+	background-color: #2c8adb;
+	color: #fff;
 }
 .twitter-btn
 {
-	background-color: #78c81e;
+	background-color: #2c8adb;
+	color: #fff;
 }
 a
 {
@@ -64,5 +65,28 @@ hr
 }
 img 
 {
-	width: 70px;
+	width: 30px;
+	height: 30px;
+}
+
+#pop
+{
+	background: #fff;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	padding:50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+#pop.active
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition:0;
 }
