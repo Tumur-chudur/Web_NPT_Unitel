@@ -22,6 +22,10 @@ main {
   overflow: hidden;
   height: 340px;
 }
+.card-img :hover {
+  border: 1px solid #78c81e;
+   background-color: ;
+}
 .card-img {
   display: block;
   height: 10rem;
@@ -31,6 +35,7 @@ main {
   background-size: cover;
   background-position: 60%;
 }
+
 .card-content {
   display: block;
   margin: 1rem;

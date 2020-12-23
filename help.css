@@ -8,13 +8,15 @@
   border-radius:15px; 
 
 }
-
+ section {
+   display: flex;
+ align-items: center;
+ justify-content: center;
+ }
 .container{
   width: 100%
   height:auto;
-  padding-left:60px; 
-  padding-top: 70px;
-  margin-left: 2%;
+    margin-left: 4%;
 
 }
 .gallery:hover {
