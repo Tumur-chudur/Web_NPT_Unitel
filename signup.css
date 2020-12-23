@@ -17,7 +17,7 @@
 }
 .sign-up-form h1
 {
-	color: blue;
+	color: #78c81e;
 	margin-bottom: 30px;
 }
 .input-box{
@@ -25,12 +25,12 @@
 	padding: 10px;
 	margin: 10px 0;
 	width: 100%;
-	border: 1px solid blue;
+	border: 1px solid #78c81e;
 	outline: none;
 }
 button
 {
-	color: #fff;
+	color: black;
 	width: 100%;
 	padding: 10px;
 	border-radius: 20px;
@@ -41,11 +41,11 @@ button
 }
 .sign-btn
 {
-	background-color: blue;
+	background-color: #78c81e;
 }
 .twitter-btn
 {
-	background-color: blue;
+	background-color: #78c81e;
 }
 a
 {
