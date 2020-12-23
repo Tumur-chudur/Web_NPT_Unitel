@@ -32,9 +32,13 @@
   85% {margin-left: -480%;}
   100% {margin-left: -600%;}
 }
-
+ section {
+   display: flex;
+ align-items: center;
+ justify-content: center;
+ }
 .turbo-link {
-  margin-left: 8%;
+
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 10px;
