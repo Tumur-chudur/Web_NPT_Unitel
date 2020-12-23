@@ -1,20 +1,20 @@
 
 #slideshow {
   overflow: hidden;
-  height: 510px;
+  height: 31.875rem;
   width: 100%;
   margin: 0 auto;
 }
 
 .slide-wrapper {
   width: calc(100% * 8);
-  height: 510px;
+  height: 31.875rem;
   -webkit-animation: slide 20s ease infinite;
 }
 
 .slide {
   float: left;
-  height: 510px;
+  height: 31.875rem;
   display: inline-block;
   background-size: cover;
 }
